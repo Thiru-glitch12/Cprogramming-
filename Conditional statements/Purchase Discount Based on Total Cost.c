@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int quantity;
+    float price, total, discount = 0;
+    scanf("%d", &quantity);
+    scanf("%f", &price);
+    total = quantity * price;
+    if (total >= 5000){
+        discount = total * 0.20;
+    }
+    else if (total >= 3000){
+        discount = total * 0.10;
+    }
+    else if (total >= 1000){
+        discount = total * 0.05;
+    }
+
+    printf("Total Cost = %.2f\n", total);
+    printf("Discount = %.2f\n", discount);
+    printf("Final Amount = %.2f\n", total - discount);
+
+    return 0;
+}
