@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    if (num >= 10000 && num <= 99999)
+        printf("It is a 5-digit number.\n");
+    else
+        printf("It is NOT a 5-digit number.\n");
+
+    return 0;
+}
