@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    float result;
+    scanf("%d %d", &a, &b);
+    if (a % 2 != 0 && b % 2 != 0)
+    {
+        result = (float)a * b;
+        printf("Result = %.4f\n", result);
+    }
+    else
+    {
+        printf("Both numbers are not odd.\n");
+    }
+    return 0;
+}
