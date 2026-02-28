@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+    int X, Y, temp, sum;
+
+    scanf("%d %d", &X, &Y);
+
+    if (X > Y)
+    {
+        temp = X;
+        X = Y;
+        Y = temp;
+    }
+
+    printf("X = %d, Y = %d\n", X, Y);
+
+    sum = X + Y;
+
+    if (sum % 2 == 0)
+    {
+        printf("Sum is Even\n");
+    }
+    else
+    {
+        printf("Sum is Odd\n");
+    }
+
+    if (X > 0 && Y > 0)
+    {
+        printf("Both are Positive\n");
+    }
+    else if (X < 0 && Y < 0)
+    {
+        printf("Both are Negative\n");
+    }
+    else
+    {
+        printf("One is Positive and One is Negative\n");
+    }
+
+    return 0;
+}
